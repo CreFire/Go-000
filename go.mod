@@ -2,4 +2,7 @@ module git.tmuyu.com.cn/Go-000
 
 go 1.15
 
-require golang.org/x/sync v0.0.0-20201207232520-09787c993a3a // indirect
+require (
+	golang.org/x/sync v0.0.0-20201207232520-09787c993a3a // indirect
+	google.golang.org/protobuf v1.25.0 // indirect
+)

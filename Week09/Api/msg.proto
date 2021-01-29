@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option go_package ="Api";
+
+message SearchRequest {
+    string action = 1;
+    int32 number = 2;
+    int32 AcTime = 3;
+}
+
+message SearchReply {
+  int32 code = 1;
+  string msg = 2;
+  string data = 3;
+}
+
+service GrpcService{
+	rpc msgF(SearchRequest) returns (SearchReply);
+
+}
